@@ -1,16 +1,18 @@
+import Links  from './links.js';
+
 export default function Header() {
-    const header = document.getElementById("header")
+    const header = document.getElementById('header');
     const headerHTML = `
-    <nav id="header-content" class="d-flex justify-content-between container p-3">
-        <a href="/index.html">Home</a>
+    <nav class="d-flex justify-content-between container p-3">
+        <a href="${Links().home.url}">Home</a>
 
         <ul class="d-flex gap-2 list-unstyled m-0">
-            <li><a href="pages/about.html">Aboout</a></li>
-            <li><a href="pages/contact.html">Contact</a></li>
-            <li><a href="pages/projects.html">Projects</a></li>
-            <li><a href="blog/">Blog</a></li>
+        ${Links().nav.map(link => `
+            <li><a href="/${link.url}">${link.name}</a></li>
+        `).join('')}
         </ul>
     </nav>
-    `
-    header.innerHTML = headerHTML
+    `;
+
+    header.innerHTML = headerHTML;
 }
