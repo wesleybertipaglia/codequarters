@@ -1,4 +1,4 @@
-var root = window.location.origin
+var root = 'codequarters'
 
 export default function Links() {
     const links = {
