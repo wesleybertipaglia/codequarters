@@ -2,7 +2,7 @@ var root = 'codequarters'
 
 export default function Links() {
     const links = {
-      home: { name: 'Home', url: `${root}/` },
+      home: { name: 'Home', url: `${root}/index.html` },
 
       nav: 
       [
