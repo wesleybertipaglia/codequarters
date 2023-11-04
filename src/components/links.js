@@ -1,4 +1,4 @@
-var root = window.location.host
+var root = window.location.origin
 
 export default function Links() {
     const links = {
