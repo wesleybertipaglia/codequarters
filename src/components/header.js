@@ -1,4 +1,4 @@
-const BASE_URL = window.location.origin
+const BASE_URL = window.location.origin + "codequarters"
 
 const links = {
   home: { name: 'Home', url: `${BASE_URL}/` },
@@ -12,9 +12,12 @@ const links = {
 }
 
 const headerTemplate = `
-  <header>
+  <header class="bg-light">
       <nav class="d-flex justify-content-between container p-3">
-          <a href="${links.home.url}">Home</a>
+          <a href="${links.home.url}" class="d-flex gap-2 align-items-center">
+            <img src="/src/assets/favicon.svg" alt="Home" style="height: 2rem" />
+            <span>Home</span>
+          </a>
 
           <ul class="d-flex gap-2 list-unstyled m-0">
           ${links.nav.map(link => `
