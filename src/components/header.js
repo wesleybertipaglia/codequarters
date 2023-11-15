@@ -1,4 +1,4 @@
-const BASE_URL = window.location.origin + "codequarters"
+const BASE_URL = window.location.origin + "/codequarters"
 
 const links = {
   home: { name: 'Home', url: `${BASE_URL}/` },
