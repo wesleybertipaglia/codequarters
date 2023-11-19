@@ -1,4 +1,4 @@
-import BaseUrl from "config/env.js"
+import BaseUrl from "/config/env.js"
 
 const DataLinks = {
     home: { name: 'Home', url: `${BaseUrl}` },

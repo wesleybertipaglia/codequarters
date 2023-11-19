@@ -1,4 +1,4 @@
-import DataPosts from 'src/data/DataPosts.js'
+import DataPosts from '/src/data/DataPosts.js'
 
 class ListPosts extends HTMLElement {
     constructor() {
