@@ -1,4 +1,4 @@
-import DataLinks from "/src/data/DataLinks.js"
+import DataLinks from "src/data/DataLinks.js"
 
 class Header extends HTMLElement {
     constructor() {
