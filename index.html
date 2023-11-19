@@ -12,8 +12,7 @@
     <link rel="shortcut icon" href="src/assets/favicon.svg" type="image/x-icon">
 
     <!-- components -->
-    <script src="src/components/header.js" type="text/javascript" defer></script>
-    <script src="src/components/footer.js" type="text/javascript" defer></script>
+    <script src="/src/templates/page.js" type="module" defer></script>
 </head>
 <body class="d-flex flex-column" style="min-height: 100vh;">
     <header-component></header-component>
@@ -26,7 +25,12 @@
             </div>
         </section>
 
-        <section class="container mx-auto">
+        <section class="bg-body-tertiary py-5">
+            <div class="container mx-auto d-flex flex-column gap-3">
+                <h2>Posts</h2>
+
+                <list-posts></list-posts>
+            </div>
         </section>
     </main>
 
