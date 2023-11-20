@@ -27,7 +27,7 @@ class ModelPost extends HTMLElement {
 
         const content = document.createElement('a')
         content.href = this.getAttribute('href')
-        content.classList.add('card-body')
+        content.classList.add('card-body', 'text-decoration-none')
         content.appendChild(title)
         content.appendChild(summary)
         content.appendChild(author)
